@@ -39,4 +39,14 @@ spectrogram_torch：解析出来mel频谱
 
 ### models.py
 SynthesizerTrn：
-wsl test
+__init__:
+传入各种超参
+channel超参：spec, inter, hidden, filter, gin
+transformer超参：n_heads, n_layers, kernel_size
+系统超参：p_dropout, use_depthwise_conv, n_layers_trans_flow
+cnn超参：resblock, kernel_size, dilation_size
+采样超参：rate, initial_channel, kernal_size
+embed超参：ssl_dim, vol_embedding, emb_g
+声学超参：use_automatic_f0_prediction
+
+self.pre: ssl_dim x hidden_channels的conv1d
