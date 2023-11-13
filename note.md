@@ -39,4 +39,4 @@ spectrogram_torch：解析出来mel频谱
 
 ### models.py
 SynthesizerTrn：
-win test
+wsl test
